@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despre – Valerica G.</title>
+    <title>Valerica Gligore – Psiholog Clinician</title>
     <style>
         body {
             font-family: Georgia, serif;
             background-color: #f9f9f9;
             color: #333;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
@@ -21,23 +21,37 @@
             background-color: #e7e3f3;
             padding: 10px 15px;
             text-align: center;
-            margin-bottom: 20px;
             border-radius: 8px;
+            margin-bottom: 30px;
         }
         .nav a {
             margin: 0 15px;
             color: #5a4e8f;
             text-decoration: none;
             font-weight: bold;
+            position: relative;
         }
-        .nav a:hover {
-            text-decoration: underline;
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            transform-origin: center;
+            width: 100%;
+            height: 2px;
+            background-color: #5a4e8f;
+            transition: transform 0.3s ease;
         }
-        .contact {
-            background-color: #eee;
-            padding: 10px 15px;
-            border-radius: 8px;
-            margin-top: 20px;
+        .nav a:hover::after {
+            transform: translateX(-50%) scaleX(1.2);
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
         }
         blockquote {
             font-style: italic;
@@ -46,41 +60,65 @@
             border-left: 4px solid #ccc;
             padding-left: 15px;
         }
+        ul {
+            padding-left: 1.2rem;
+        }
     </style>
 </head>
 <body>
     <div class="nav">
-        <a href="despre.html">Despre</a>
+        <a href="index.html">Despre</a>
         <a href="contact.html">Contact</a>
     </div>
 
-    <h1>Bine ai venit</h1>
-    <p>Sunt <strong>Valerica G.</strong>, psiholog clinician și psihoterapeut psihanalist în formare.</p>
-    <p>Lucrez cu <strong>adulți care trec prin perioade de durere emoțională profundă</strong>:</p>
-    <ul>
-        <li>depresie, anxietate, doliu, confuzie, blocaje personale</li>
-        <li>relații tensionate sau lipsa unui sens interior</li>
-        <li>pierderi care au zguduit identitatea</li>
-    </ul>
-    <p>Știu că nu e ușor să ceri ajutor. Poate ai dus multe singur(ă), în tăcere, ani de zile. Poate ai încercat să te înțelegi, dar ai obosit. Poate simți că nu mai ești <em>tu</em> și vrei să-ți regăsești locul în viața ta.</p>
-    <p><strong>Terapia este un spațiu sigur în care nu trebuie să fii „bine”.</strong> Este locul în care poți fi cu ceea ce doare, fără presiune, fără judecată.</p>
+    <h1>Valerica Gligore</h1>
+    <p><strong>Psiholog clinician</strong> și psihoterapeut în formare, membră în Colegiul Psihologilor din România.</p>
 
-    <h2>Cum lucrez</h2>
-    <ul>
-        <li>Psihoterapie de profunzime (psihanalitic, cu ritm interior)</li>
-        <li>Însoțire pe termen mediu sau lung, în funcție de nevoie</li>
-        <li>Confidențialitate și prezență autentică</li>
-        <li>Online sau în cabinet (în funcție de disponibilitate)</li>
-    </ul>
+    <div class="card">
+        <h2>Servicii oferite</h2>
+        <ul>
+            <li>Psihoterapie individuală – 50 min – 200 RON</li>
+            <li>Consiliere psihologică – 50 min – 200 RON</li>
+            <li>Sesiuni online prin apel video</li>
+            <li>Sprijin emoțional pentru copii, adolescenți și vârstnici</li>
+        </ul>
+    </div>
 
-    <h2>Unde mă găsești</h2>
-    <p>🧾 Cabinet individual de psihologie – <em>[orașul tău]</em><br>
-    💻 Ședințe disponibile și online<br>
-    📅 Programări: Luni – Vineri, între orele <em>[10:00 – 18:00]</em></p>
+    <div class="card">
+        <h2>Obiective urmărite în terapie</h2>
+        <ul>
+            <li>Depresie, anxietate, atacuri de panică</li>
+            <li>Doliu, traume, pierderi emoționale</li>
+            <li>Stima de sine scăzută</li>
+            <li>Blocaje relaționale și personale</li>
+            <li>Abilități de comunicare și exprimare</li>
+            <li>Dezvoltare personală</li>
+        </ul>
+    </div>
 
-    <blockquote>
-        „Oamenii nu se vindecă prin sfaturi, ci prin prezența cuiva care poate rămâne acolo cu ei, în durere.”
-    </blockquote>
-    <p>Dacă simți că e momentul să te așezi un pic înapoi în tine, <strong>te aștept cu blândețe.</strong></p>
+    <div class="card">
+        <h2>Povestea mea</h2>
+        <p>Cu peste 400 de ore de analiză personală și formare în psihoterapie psihanalitică (Fundația Generația, 2022), ofer un spațiu empatic și confidențial unde clienții pot explora în profunzime trăirile lor.</p>
+        <blockquote>
+            „Oamenii nu se vindecă prin sfaturi, ci prin prezența cuiva care poate rămâne acolo cu ei, în durere.”
+        </blockquote>
+    </div>
+
+    <div class="card">
+        <h2>Program și locație</h2>
+        <p>
+            📍 Strada Elena Caragiani 17, București<br>
+            💻 Ședințe și online<br>
+            🕐 Program: Luni – Vineri, 10:00 – 18:00
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>
+            📞 Telefon / WhatsApp: <a href="tel:0770232937">0770232937</a><br>
+            📧 Email: <a href="mailto:vali_robu@yahoo.com">vali_robu@yahoo.com</a>
+        </p>
+    </div>
 </body>
 </html>
