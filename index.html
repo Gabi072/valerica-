@@ -4,54 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valerica Gligore – Psiholog Clinician</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Georgia, serif;
+            font-family: 'Inter', sans-serif;
             background-color: #f9f9f9;
             color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
             line-height: 1.6;
         }
-        h1, h2 {
-            color: #5a4e8f;
+        header {
+            background: linear-gradient(135deg, #2a5298,#1e3c72);
+            color: white;
+            text-align:center;
+            padding: 3rem 1rem;
         }
-        .nav {
-            background-color: #e7e3f3;
-            padding: 10px 15px;
-            text-align: center;
-            border-radius: 8px;
-            margin-bottom: 30px;
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
-        .nav a {
-            margin: 0 15px;
-            color: #5a4e8f;
-            text-decoration: none;
-            font-weight: bold;
-            position: relative;
+        header p {
+            font-size: 1.2rem;
         }
-        .nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -3px;
-            left: 50%;
-            transform: translateX(-50%) scaleX(0);
-            transform-origin: center;
-            width: 100%;
-            height: 2px;
-            background-color: #5a4e8f;
-            transition: transform 0.3s ease;
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
-        .nav a:hover::after {
-            transform: translateX(-50%) scaleX(1.2);
-        }
-        .card {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        section {
+            background-color: #fff;
+            padding: 2rem;
             margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        h2 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: .5rem;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        a {
+            color: #1e3c72;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         blockquote {
             font-style: italic;
@@ -60,65 +66,76 @@
             border-left: 4px solid #ccc;
             padding-left: 15px;
         }
-        ul {
-            padding-left: 1.2rem;
+        footer {
+            text-align: center;
+            background: #eee;
+            padding: 1rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <a href="index.html">Despre</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <header>
+        <h1>Valerica Gligore</h1>
+        <p>Psiholog Clinician – Psihoterapie pentru copii, adolescenți și adulți</p>
+    </header>
 
-    <h1>Valerica Gligore</h1>
-    <p><strong>Psiholog clinician</strong> și psihoterapeut în formare, membră în Colegiul Psihologilor din România.</p>
+    <main>
+        <section>
+            <h2>Despre mine</h2>
+            <p>Sunt psiholog clinician și psihoterapeut în formare psihanalitică, membră în Colegiul Psihologilor din România. Cu peste 400 de ore de analiză personală și formare profesională, ofer un cadru empatic, sigur și confidențial pentru explorare interioară și vindecare.</p>
+        </section>
 
-    <div class="card">
-        <h2>Servicii oferite</h2>
-        <ul>
-            <li>Psihoterapie individuală – 50 min – 200 RON</li>
-            <li>Consiliere psihologică – 50 min – 200 RON</li>
-            <li>Sesiuni online prin apel video</li>
-            <li>Sprijin emoțional pentru copii, adolescenți și vârstnici</li>
-        </ul>
-    </div>
+        <section>
+            <h2>Servicii oferite</h2>
+            <ul>
+                <li>Psihoterapie individuală – 50 min – 200 RON</li>
+                <li>Consiliere psihologică – 50 min – 200 RON</li>
+                <li>Sesiuni online prin apel video</li>
+                <li>Sprijin emoțional pentru copii, adolescenți și vârstnici</li>
+            </ul>
+        </section>
 
-    <div class="card">
-        <h2>Obiective urmărite în terapie</h2>
-        <ul>
-            <li>Depresie, anxietate, atacuri de panică</li>
-            <li>Doliu, traume, pierderi emoționale</li>
-            <li>Stima de sine scăzută</li>
-            <li>Blocaje relaționale și personale</li>
-            <li>Abilități de comunicare și exprimare</li>
-            <li>Dezvoltare personală</li>
-        </ul>
-    </div>
+        <section>
+            <h2>Obiective urmărite în terapie</h2>
+            <ul>
+                <li>Depresie, anxietate, atacuri de panică</li>
+                <li>Doliu, traume, pierderi emoționale</li>
+                <li>Stima de sine scăzută</li>
+                <li>Blocaje relaționale și personale</li>
+                <li>Abilități de comunicare și exprimare</li>
+                <li>Dezvoltare personală</li>
+            </ul>
+        </section>
 
-    <div class="card">
-        <h2>Povestea mea</h2>
-        <p>Cu peste 400 de ore de analiză personală și formare în psihoterapie psihanalitică (Fundația Generația, 2022), ofer un spațiu empatic și confidențial unde clienții pot explora în profunzime trăirile lor.</p>
-        <blockquote>
-            „Oamenii nu se vindecă prin sfaturi, ci prin prezența cuiva care poate rămâne acolo cu ei, în durere.”
-        </blockquote>
-    </div>
+        <section>
+            <h2>Povestea mea</h2>
+            <p>Ofer un spațiu în care nu trebuie să fii „bine”. Poți veni cu tot ceea ce doare, cu tot ceea ce nu știi încă cum să înțelegi sau să exprimi. Mă angajez într-un proces autentic de însoțire, bazat pe ascultare profundă, prezență și respect pentru ritmul interior al fiecărei persoane.</p>
+            <blockquote>
+                „Oamenii nu se vindecă prin sfaturi, ci prin prezența cuiva care poate rămâne acolo cu ei, în durere.”
+            </blockquote>
+        </section>
 
-    <div class="card">
-        <h2>Program și locație</h2>
-        <p>
-            📍 Strada Elena Caragiani 17, București<br>
-            💻 Ședințe și online<br>
-            🕐 Program: Luni – Vineri, 10:00 – 18:00
-        </p>
-    </div>
+        <section>
+            <h2>Program și locație</h2>
+            <p>
+                📍 Strada Elena Caragiani 17, București<br>
+                💻 Ședințe și online<br>
+                🕐 Program: Luni – Vineri, 10:00 – 18:00
+            </p>
+        </section>
 
-    <div class="card">
-        <h2>Contact</h2>
-        <p>
-            📞 Telefon / WhatsApp: <a href="tel:0770232937">0770232937</a><br>
-            📧 Email: <a href="mailto:vali_robu@yahoo.com">vali_robu@yahoo.com</a>
-        </p>
-    </div>
+        <section>
+            <h2>Contact</h2>
+            <p>
+                📞 Telefon / WhatsApp: <a href="tel:0770232937">0770232937</a><br>
+                📧 Email: <a href="mailto:vali_robu@yahoo.com">vali_robu@yahoo.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Valerica Gligore – Psiholog Clinician. Toate drepturile rezervate.
+    </footer>
 </body>
 </html>
